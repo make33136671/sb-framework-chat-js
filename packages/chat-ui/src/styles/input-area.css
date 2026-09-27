@@ -1,0 +1,102 @@
+/* === 输入区域 === */
+.chat-ui-input-wrapper {
+  position: relative;
+  background: var(--chat-input-bg);
+  border-top: 1px solid var(--chat-border);
+}
+
+/* === 工具栏行 === */
+.chat-ui-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 10px 0;
+}
+
+.chat-ui-tool-btn {
+  width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center;
+  border: none; background: transparent;
+  color: var(--chat-text-secondary);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  font-size: 18px;
+}
+.chat-ui-tool-btn:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--chat-accent-start);
+}
+.chat-ui-tool-btn.active {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--chat-accent-start);
+}
+.chat-ui-tool-btn:disabled {
+  opacity: 0.4; cursor: not-allowed;
+}
+
+.chat-ui-hidden-input { display: none; }
+
+/* === 输入行 === */
+.chat-ui-input-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.chat-ui-message-input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid var(--chat-border);
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  background-color: var(--chat-input-bg);
+  color: var(--chat-text-primary);
+  font-family: inherit;
+}
+.chat-ui-message-input:focus {
+  border-color: var(--chat-accent-start);
+}
+.chat-ui-message-input:disabled {
+  background: rgba(0, 0, 0, 0.05);
+  cursor: not-allowed;
+}
+
+/* === 发送按钮 === */
+.chat-ui-send-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, var(--chat-accent-start) 0%, var(--chat-accent-end) 100%);
+  color: white;
+  border: none; border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-family: inherit;
+  font-weight: 500;
+}
+.chat-ui-send-btn:hover:not(:disabled) {
+  opacity: 0.9;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+.chat-ui-send-btn:disabled {
+  background: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .chat-ui-toolbar { padding: 4px 8px 0; }
+  .chat-ui-tool-btn { width: 28px; height: 28px; font-size: 16px; }
+  .chat-ui-input-area { gap: 6px; padding: 4px 8px 8px; }
+  .chat-ui-message-input { padding: 8px 12px; font-size: 16px; }
+  .chat-ui-send-btn { padding: 8px 14px; font-size: 14px; }
+}

@@ -1,0 +1,61 @@
+/* === 表情选择器 === */
+.chat-ui-emoji-picker {
+  position: absolute;
+  bottom: 100%;
+  left: 0; right: 0;
+  background: var(--chat-input-bg);
+  border: 1px solid var(--chat-border);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  z-index: 100;
+}
+
+.chat-ui-emoji-categories {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--chat-border);
+  padding-bottom: 8px;
+}
+
+.chat-ui-category-btn {
+  padding: 4px 12px;
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  font-size: 12px;
+  color: var(--chat-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.chat-ui-category-btn:hover { background: rgba(0, 0, 0, 0.1); }
+.chat-ui-category-btn.active {
+  background: linear-gradient(135deg, var(--chat-accent-start) 0%, var(--chat-accent-end) 100%);
+  color: white;
+}
+
+.chat-ui-emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.chat-ui-emoji-btn {
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  border: none; background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.chat-ui-emoji-btn:hover { background: rgba(0, 0, 0, 0.05); }
+
+@media (max-width: 480px) {
+  .chat-ui-emoji-grid { grid-template-columns: repeat(6, 1fr); }
+  .chat-ui-emoji-btn { width: 44px; height: 44px; font-size: 24px; }
+}

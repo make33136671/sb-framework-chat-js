@@ -1,0 +1,69 @@
+/* === 图片消息 === */
+.chat-ui-message-image {
+  padding: 4px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.chat-ui-message-item.is-self .chat-ui-message-image {
+  background: transparent !important;
+}
+
+.chat-ui-chat-image {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  object-fit: contain;
+}
+.chat-ui-chat-image:hover { transform: scale(1.02); }
+
+.chat-ui-image-error {
+  color: var(--chat-text-secondary);
+  font-size: 12px;
+  padding: 20px;
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+/* === 图片预览 === */
+.chat-ui-image-preview-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.chat-ui-image-preview-container {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.chat-ui-preview-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.chat-ui-close-preview-btn {
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 36px; height: 36px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+}
+.chat-ui-close-preview-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

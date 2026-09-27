@@ -1,0 +1,17 @@
+{
+  "name": "sb-framework-chat-js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SB Framework Chat frontend libraries (realtime-core + chat-ui)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "type-check": "pnpm -r run type-check"
+  },
+  "engines": {
+    "node": ">=20.12.0",
+    "pnpm": ">=10.0.0"
+  },
+  "packageManager": "pnpm@11.22.0+sha512.1ff870c4c6133dfd88fb2afc46dd13d47f09c9794b438c6fdb47ca98caf3bc16381ee0be93a091b8e3824cf01f889f46d7d9e20910fb0be1ab0fb5baa80dd621"
+}

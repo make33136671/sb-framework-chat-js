@@ -1,0 +1,41 @@
+{
+  "name": "@sb/realtime-core",
+  "version": "0.1.0",
+  "description": "Universal realtime core library for chat messaging, auth, and session management (SignalR)",
+  "type": "module",
+  "license": "MIT",
+  "author": "saibotianlong",
+  "keywords": [
+    "realtime",
+    "chat",
+    "messaging",
+    "signalr",
+    "customer-service"
+  ],
+  "sideEffects": false,
+  "main": "./dist/realtime-core.umd.cjs",
+  "module": "./dist/realtime-core.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/realtime-core.js",
+      "require": "./dist/realtime-core.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@microsoft/signalr": "^8.0.7"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.3",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.0"
+  }
+}
