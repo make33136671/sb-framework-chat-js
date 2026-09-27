@@ -1,6 +1,6 @@
-import type { Message } from '@sb/realtime-core'
+import type { Message } from '@saiboniuma/realtime-core'
 import type { MessageRenderer, RenderContext } from '../../types/index'
-import { MessageType } from '@sb/realtime-core'
+import { MessageType } from '@saiboniuma/realtime-core'
 import { createElement } from '../../utils/dom'
 
 /** 文本消息渲染器 */

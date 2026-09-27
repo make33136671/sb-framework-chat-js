@@ -1,6 +1,8 @@
 # dependencies
 node_modules/
 .pnpm-store/
+# pnpm workspace；禁止提交 npm 生成的根 lockfile
+package-lock.json
 
 # build output
 dist/

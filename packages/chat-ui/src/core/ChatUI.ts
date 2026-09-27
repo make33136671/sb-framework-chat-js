@@ -1,4 +1,4 @@
-import type { RealtimeClient, Message } from '@sb/realtime-core'
+import type { RealtimeClient, Message } from '@saiboniuma/realtime-core'
 import type { ChatUIOptions, ChatUIPlugin, SenderInfo } from '../types/index'
 import { PluginManager } from './PluginManager'
 import { ThemeManager } from './ThemeManager'

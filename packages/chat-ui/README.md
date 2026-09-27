@@ -1,21 +1,19 @@
-# @sb/chat-ui
+# @saiboniuma/chat-ui
 
 > 可插拔聊天 UI 组件库 — Shadow DOM 隔离，插件化消息渲染。
 
-原 `openim-chat-ui-js`，已重命名。基于 `realtime-core-js` 提供 UI 组件。
+基于 `@saiboniuma/realtime-core` 提供 UI 组件。
 
 ## 安装
 
 ```bash
-npm install @sb/chat-ui
-# 或从本地依赖
-npm install @sb/chat-ui@file:../realtime-chat-ui
+npm install @saiboniuma/chat-ui @saiboniuma/realtime-core
 ```
 
 ## 快速使用
 
 ```typescript
-import { ChatUI } from '@sb/chat-ui';
+import { ChatUI } from '@saiboniuma/chat-ui';
 
 const chatUI = new ChatUI({
   container: document.getElementById('chat-container'),
@@ -40,14 +38,15 @@ npm run type-check # 类型检查
 
 ## 依赖
 
-- `@sb/realtime-core` (peer)
+- `@saiboniuma/realtime-core`
 - TypeScript ~5.6.3
 - Vite ^6.2.0
 
 ## 发布
 
 ```bash
-npm publish  # 发布到内网 GitLab npm registry
+pnpm build
+pnpm publish --access public   # 发布到 npmjs.com
 ```
 
-Registry: `https://gitlab.saibo.club/api/v4/projects/28/packages/npm/`
+Registry: `https://registry.npmjs.org/`

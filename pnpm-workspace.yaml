@@ -2,5 +2,7 @@ packages:
   - 'packages/*'
 allowBuilds:
   esbuild: true
+minimumReleaseAgeExclude:
+  - '@saiboniuma/realtime-core@0.1.0'
 onlyBuiltDependencies:
   - esbuild

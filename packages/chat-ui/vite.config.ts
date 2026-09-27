@@ -11,9 +11,9 @@ export default defineConfig({
       fileName: 'realtime-chat-ui',
     },
     rollupOptions: {
-      external: ['@sb/realtime-core'],
+      external: ['@saiboniuma/realtime-core'],
       output: {
-        globals: { '@sb/realtime-core': 'RealtimeCore' },
+        globals: { '@saiboniuma/realtime-core': 'RealtimeCore' },
       },
     },
   },

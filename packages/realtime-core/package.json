@@ -1,10 +1,19 @@
 {
-  "name": "@sb/realtime-core",
+  "name": "@saiboniuma/realtime-core",
   "version": "0.1.0",
   "description": "Universal realtime core library for chat messaging, auth, and session management (SignalR)",
   "type": "module",
   "license": "MIT",
   "author": "saibotianlong",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/make33136671/sb-framework-chat-js.git",
+    "directory": "packages/realtime-core"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "realtime",
     "chat",

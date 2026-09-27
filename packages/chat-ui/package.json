@@ -1,10 +1,19 @@
 {
-  "name": "@sb/chat-ui",
-  "version": "0.1.0",
+  "name": "@saiboniuma/chat-ui",
+  "version": "0.1.1",
   "description": "Pluggable chat UI component library with Shadow DOM isolation",
   "type": "module",
   "license": "MIT",
   "author": "saibotianlong",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/make33136671/sb-framework-chat-js.git",
+    "directory": "packages/chat-ui"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": ["chat-ui", "realtime", "messaging", "customer-service", "shadow-dom"],
   "sideEffects": false,
   "main": "./dist/realtime-chat-ui.umd.cjs",
@@ -25,7 +34,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@sb/realtime-core": "file:../realtime-core"
+    "@saiboniuma/realtime-core": "^0.1.0"
   },
   "devDependencies": {
     "typescript": "~5.6.3",

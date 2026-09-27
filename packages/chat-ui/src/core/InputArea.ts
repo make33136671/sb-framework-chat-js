@@ -1,4 +1,4 @@
-import type { RealtimeClient, Message } from '@sb/realtime-core'
+import type { RealtimeClient, Message } from '@saiboniuma/realtime-core'
 import type { PluginManager } from './PluginManager'
 import type { InputToolContext } from '../types/index'
 import type { I18n } from '../i18n/I18n'

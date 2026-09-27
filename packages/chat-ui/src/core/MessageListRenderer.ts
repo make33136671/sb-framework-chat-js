@@ -1,5 +1,5 @@
-import type { Message } from '@sb/realtime-core'
-import { isSystemMessage } from '@sb/realtime-core'
+import type { Message } from '@saiboniuma/realtime-core'
+import { isSystemMessage } from '@saiboniuma/realtime-core'
 import type { PluginManager } from './PluginManager'
 import type { RenderContext, SenderInfo } from '../types/index'
 import type { I18n } from '../i18n/I18n'

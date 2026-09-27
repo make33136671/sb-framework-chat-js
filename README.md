@@ -4,10 +4,12 @@
 
 ## 包清单
 
-| 包 | 说明 | 源自 |
-|----|------|------|
-| `@sb/realtime-core` | 基于 @microsoft/signalr 的实时通讯 SDK（连接/认证/消息/会话/上传/Token 续期） | sb-agent-hub/realtime-core-js（Phase C 重做） |
-| `@sb/chat-ui` | 可插拔聊天 UI 组件库（Shadow DOM 隔离） | sb-agent-hub/realtime-chat-ui-js |
+发布于 npmjs.com 公共源（scope：`@saiboniuma`）：
+
+| 包 | 说明 |
+|----|------|
+| `@saiboniuma/realtime-core` | 基于 @microsoft/signalr 的实时通讯 SDK（连接/认证/消息/会话/上传/Token 续期） |
+| `@saiboniuma/chat-ui` | 可插拔聊天 UI 组件库（Shadow DOM 隔离） |
 
 ## 开发
 
@@ -20,24 +22,26 @@ pnpm type-check   # 类型检查
 
 ## 被引用方式
 
-业务项目（如 `apps/agenthub/agenthub-chat`）通过本地路径引用：
+业务项目从 npm 公共源按版本引用：
 
 ```json
 {
   "dependencies": {
-    "@sb/realtime-core": "file:../../../../sb/sb-framework-chat-js/packages/realtime-core",
-    "@sb/chat-ui": "file:../../../../sb/sb-framework-chat-js/packages/chat-ui"
+    "@saiboniuma/realtime-core": "^0.1.0",
+    "@saiboniuma/chat-ui": "^0.1.0"
   }
 }
 ```
+
+本地联调可在业务项目中用 `pnpm link --global` 或 override 到本 workspace 的包目录。
 
 ## 目录结构
 
 ```
 sb-framework-chat-js/
 ├── packages/
-│   ├── realtime-core/   # @sb/realtime-core
-│   └── chat-ui/         # @sb/chat-ui
+│   ├── realtime-core/   # @saiboniuma/realtime-core
+│   └── chat-ui/         # @saiboniuma/chat-ui
 ├── package.json
 ├── pnpm-workspace.yaml
 └── README.md

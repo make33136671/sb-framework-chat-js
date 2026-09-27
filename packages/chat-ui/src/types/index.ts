@@ -1,4 +1,4 @@
-import type { Message, RealtimeClient } from '@sb/realtime-core'
+import type { Message, RealtimeClient } from '@saiboniuma/realtime-core'
 import type { I18n } from '../i18n/I18n'
 
 /** 聊天 UI 配置选项 */

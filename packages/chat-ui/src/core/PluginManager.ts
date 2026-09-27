@@ -1,4 +1,4 @@
-import type { Message } from '@sb/realtime-core'
+import type { Message } from '@saiboniuma/realtime-core'
 import type {
   ChatUIPlugin,
   PluginContext,

@@ -1,5 +1,5 @@
-import type { Message, CustomImageData } from '@sb/realtime-core'
-import { MessageType } from '@sb/realtime-core'
+import type { Message, CustomImageData } from '@saiboniuma/realtime-core'
+import { MessageType } from '@saiboniuma/realtime-core'
 import type { MessageRenderer, RenderContext } from '../../types/index'
 import { createElement } from '../../utils/dom'
 import { ImagePreview } from './ImagePreview'

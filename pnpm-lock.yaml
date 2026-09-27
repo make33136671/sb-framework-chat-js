@@ -10,9 +10,9 @@ importers:
 
   packages/chat-ui:
     dependencies:
-      '@sb/realtime-core':
-        specifier: file:../realtime-core
-        version: link:../realtime-core
+      '@saiboniuma/realtime-core':
+        specifier: ^0.1.0
+        version: 0.1.0
     devDependencies:
       typescript:
         specifier: ~5.6.3
@@ -417,6 +417,9 @@ packages:
 
   '@rushstack/ts-command-line@5.3.12':
     resolution: {integrity: sha512-Vg2n24arSf7JvUNga2DMHYTbxnVq9L5OtVCp4Gfr8YC/kmL/bmdR8FQhGcpMzMYNY9Vdw3+TaimG11Sf+z1Tpw==}
+
+  '@saiboniuma/realtime-core@0.1.0':
+    resolution: {integrity: sha512-6ciAoiPbm9kEQdjpBg9H+cNoDuHxFAfj//4m/nVwD7n4hkcyN03s999IDA0hEVTtT/Q7tvxapjNvdFNTOj59xQ==}
 
   '@types/argparse@1.0.38':
     resolution: {integrity: sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==}
@@ -1116,6 +1119,14 @@ snapshots:
       string-argv: 0.3.2
     transitivePeerDependencies:
       - '@types/node'
+
+  '@saiboniuma/realtime-core@0.1.0':
+    dependencies:
+      '@microsoft/signalr': 8.0.29
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - utf-8-validate
 
   '@types/argparse@1.0.38': {}
 

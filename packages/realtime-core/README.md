@@ -1,21 +1,17 @@
-# @sb/realtime-core
+# @saiboniuma/realtime-core
 
 > 实时通讯核心库 — 基于 SignalR 的聊天消息、认证、会话管理 SDK。
-
-替代旧版 `openim-core-js`（基于 OpenIM SDK），从零重做，消除所有 monkey-patch。
 
 ## 安装
 
 ```bash
-npm install @sb/realtime-core
-# 或从本地依赖
-npm install @sb/realtime-core@file:../realtime-core
+npm install @saiboniuma/realtime-core
 ```
 
 ## 快速使用
 
 ```typescript
-import { RealtimeClient } from '@sb/realtime-core';
+import { RealtimeClient } from '@saiboniuma/realtime-core';
 
 const client = new RealtimeClient({
   baseURL: 'https://api.example.com',
@@ -65,7 +61,8 @@ npm run type-check # 类型检查
 ## 发布
 
 ```bash
-npm publish  # 发布到内网 GitLab npm registry
+pnpm build
+pnpm publish --access public   # 发布到 npmjs.com
 ```
 
-Registry: `https://gitlab.saibo.club/api/v4/projects/27/packages/npm/`
+Registry: `https://registry.npmjs.org/`
